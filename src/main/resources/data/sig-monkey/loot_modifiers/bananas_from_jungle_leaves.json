@@ -1,0 +1,29 @@
+{
+  "type": "sig-monkey:bananas_from_jungle_leaves",
+  "conditions": [
+    {
+      "condition": "minecraft:block_state_property",
+      "block": "minecraft:jungle_leaves"
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:match_tool",
+        "predicate": {
+          "item": "minecraft:shears"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:table_bonus",
+      "enchantment": "minecraft:fortune",
+      "chances": [
+        0.01,
+        0.0111111111,
+        0.0125,
+        0.0166666667,
+        0.05
+      ]
+    }
+  ]
+}
