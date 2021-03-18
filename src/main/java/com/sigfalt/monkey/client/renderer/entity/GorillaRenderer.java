@@ -6,7 +6,10 @@ import com.sigfalt.monkey.common.entity.GorillaEntity;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
+@OnlyIn(Dist.CLIENT)
 public class GorillaRenderer extends MobRenderer<GorillaEntity, GorillaModel<GorillaEntity>> {
 
 	private static final ResourceLocation MONKEY_TEXTURE = new ResourceLocation(MonkeyMod.MOD_ID, "textures/entity/gorilla.png");
