@@ -23,7 +23,7 @@ public class MonkeyForgeEventSubscriber {
 			LOGGER.debug("Patching biome spawn info for {}...", event.getName());
 			final MobSpawnInfoBuilder spawns = event.getSpawns();
 			spawns.getSpawner(EntityClassification.CREATURE).removeIf(e -> e.type == MonkeyEntities.GORILLA.get());
-			spawns.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(MonkeyEntities.GORILLA.get(), 100, 3, 5));
+			spawns.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(MonkeyEntities.GORILLA.get(), 5, 3, 5));
 			LOGGER.debug("Finished.");
 		}
 	}
