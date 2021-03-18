@@ -7,7 +7,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.goal.*;
-import net.minecraft.entity.passive.TameableEntity;
+import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -19,7 +19,7 @@ import org.apache.logging.log4j.Logger;
 
 import javax.annotation.Nullable;
 
-public class GorillaEntity extends TameableEntity {
+public class GorillaEntity extends AnimalEntity {
 
 	private static final Logger LOGGER = LogManager.getLogger();
 
@@ -34,7 +34,7 @@ public class GorillaEntity extends TameableEntity {
 
 	private static final Item BANANA = MonkeyItems.BANANA_ITEM.get();
 
-	public GorillaEntity(final EntityType<? extends TameableEntity> entityType, final World world) {
+	public GorillaEntity(final EntityType<? extends AnimalEntity> entityType, final World world) {
 		super(entityType, world);
 	}
 
